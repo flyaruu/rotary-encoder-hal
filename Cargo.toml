@@ -20,7 +20,7 @@ optional = true
 
 [dependencies.embedded-hal-rc]
 package  = "embedded-hal"
-version  = "=1.0.0-rc.1"
+version  = "=1.0.0-rc.3"
 optional = true
 
 
