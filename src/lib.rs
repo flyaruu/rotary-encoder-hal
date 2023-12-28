@@ -13,11 +13,11 @@
 
 use either::Either;
 
-#[cfg(not(feature = "embedded-hal-alpha"))]
+#[cfg(not(feature = "embedded-hal-rc"))]
 use embedded_hal::digital::v2::InputPin;
 
-#[cfg(feature = "embedded-hal-alpha")]
-use embedded_hal_alpha::digital::blocking::InputPin;
+#[cfg(feature = "embedded-hal-rc")]
+use embedded_hal_rc::digital::InputPin;
 
 /// Holds current/old state and both [`InputPin`](https://docs.rs/embedded-hal/0.2.3/embedded_hal/digital/v2/trait.InputPin.html)
 #[derive(Clone, Debug, Eq, PartialEq)]

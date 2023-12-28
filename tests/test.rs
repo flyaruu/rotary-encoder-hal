@@ -3,10 +3,10 @@ use std::cell::RefCell;
 use proptest::prelude::*;
 use rotary_encoder_hal::{Direction, Rotary};
 
-#[cfg(not(feature = "embedded-hal-alpha"))]
+#[cfg(not(feature = "embedded-hal-rc"))]
 use embedded_hal::digital::v2::InputPin;
 
-#[cfg(feature = "embedded-hal-alpha")]
+#[cfg(feature = "embedded-hal-rc")]
 use embedded_hal_alpha::digital::blocking::InputPin;
 
 struct FakeInputPin<I>(RefCell<I>);
