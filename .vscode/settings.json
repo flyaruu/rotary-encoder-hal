@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.checkOnSave.allTargets": false,
+    "rust-analyzer.cargo.features": [
+        "embedded-hal-1"
+    ]
+
+}
